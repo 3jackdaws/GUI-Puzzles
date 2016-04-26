@@ -4,38 +4,22 @@ using System.Collections;
 
 public class StopLightStateSelector : MonoBehaviour
 {
-    public RectTransform red;
-    public RectTransform yellow;
-    public RectTransform green;
+    public RectTransform [] lights;
+    private int set_light;
+    
     // Use this for initialization
     void Start () {
         UnsetAll();
         try
         {
-            switch (PlayerPrefs.GetInt("ActiveLight"))
-            {
-                case 0:
-                    {
-                        red.gameObject.SetActive(true);
-                        break;
-                    }
-                case 1:
-                    {
-                        yellow.gameObject.SetActive(true);
-                        break;
-                    }
-                case 2:
-                    {
-                        green.gameObject.SetActive(true);
-                        break;
-                    }
-            }
+            set_light = PlayerPrefs.GetInt("ActiveLight");
         }
         catch (PlayerPrefsException e)
         {
-            red.gameObject.SetActive(true);
+            set_light = 0;
         }
-        
+        lights[set_light].gameObject.SetActive(true);
+        InvokeRepeating("GoNext", 1, 1);
 	}
 	
 	// Update is called once per frame
@@ -45,32 +29,17 @@ public class StopLightStateSelector : MonoBehaviour
 
     void UnsetAll()
     {
-        red.gameObject.SetActive(false);
-        yellow.gameObject.SetActive(false);
-        green.gameObject.SetActive(false);
+        foreach(RectTransform light in lights)
+        {
+            light.gameObject.SetActive(false);
+        }
     }
 
-    public void SetGreen()
+    void GoNext()
     {
-        UnsetAll();
-        green.gameObject.SetActive(true);
-        PlayerPrefs.SetInt("ActiveLight", 2);
-        PlayerPrefs.Save();
-    }
-
-    public void SetYellow()
-    {
-        UnsetAll();
-        yellow.gameObject.SetActive(true);
-        PlayerPrefs.SetInt("ActiveLight", 1);
-        PlayerPrefs.Save();
-    }
-
-    public void SetRed()
-    {
-        UnsetAll();
-        red.gameObject.SetActive(true);
-        PlayerPrefs.SetInt("ActiveLight", 0);
+        lights[set_light++].gameObject.SetActive(false);
+        lights[set_light%=3].gameObject.SetActive(true);
+        PlayerPrefs.SetInt("ActiveLight", set_light);
         PlayerPrefs.Save();
     }
 
