@@ -19,7 +19,7 @@ public class StopLightStateSelector : MonoBehaviour
             set_light = 0;
         }
         lights[set_light].gameObject.SetActive(true);
-        InvokeRepeating("GoNext", 1, 1);
+        InvokeRepeating("GoNext", 1, 2);
 	}
 	
 	// Update is called once per frame
