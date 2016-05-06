@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{3D8C8008-5044-3D7F-ACBF-CB8B37A85029}</ProjectGuid>
+    <ProjectGuid>{52A7BB0C-4226-29E3-8B52-BE499C342347}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,6 +45,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Dragable.cs" />
+     <Compile Include="Assets\Puzzle5Assets\MediaPlayerSubstrate.cs" />
+     <Compile Include="Assets\Puzzle5Assets\Song.cs" />
+     <Compile Include="Assets\Puzzle5Assets\UiController.cs" />
+     <Compile Include="Assets\Puzzle6\WebcamOnTexture.cs" />
+     <Compile Include="Assets\StopLightStateSelector.cs" />
      <Compile Include="Assets\TTT.cs" />
      <Compile Include="Assets\Win.cs" />
  <Reference Include="UnityEngine.Networking">
