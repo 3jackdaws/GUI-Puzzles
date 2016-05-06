@@ -1,0 +1,17 @@
+/Users/ian/Documents/Unity Projects/GUI-Puzzles/Temp/bin/Debug/Assembly-CSharp.dll.mdb
+/Users/ian/Documents/Unity Projects/GUI-Puzzles/Temp/bin/Debug/Assembly-CSharp.dll
+/Users/ian/Documents/Unity Projects/GUI-Puzzles/obj/Debug/Assembly-CSharp.dll
+/Users/ian/Documents/Unity Projects/GUI-Puzzles/obj/Debug/Assembly-CSharp.dll.mdb
+/Users/ian/Documents/Unity Projects/GUI-Puzzles/Temp/bin/Debug/UnityEngine.dll
+/Users/ian/Documents/Unity Projects/GUI-Puzzles/Temp/bin/Debug/UnityEditor.dll
+/Users/ian/Documents/Unity Projects/GUI-Puzzles/Temp/bin/Debug/UnityEngine.Networking.dll
+/Users/ian/Documents/Unity Projects/GUI-Puzzles/Temp/bin/Debug/UnityEngine.UI.dll
+/Users/ian/Documents/Unity Projects/GUI-Puzzles/Temp/bin/Debug/Mono.Cecil.dll
+/Users/ian/Documents/Unity Projects/GUI-Puzzles/Temp/bin/Debug/Unity.SerializationLogic.dll
+/Users/ian/Documents/Unity Projects/GUI-Puzzles/Temp/bin/Debug/Unity.DataContract.dll
+/Users/ian/Documents/Unity Projects/GUI-Puzzles/Temp/bin/Debug/ICSharpCode.NRefactory.dll
+/Users/ian/Documents/Unity Projects/GUI-Puzzles/Temp/bin/Debug/Unity.UNetWeaver.dll
+/Users/ian/Documents/Unity Projects/GUI-Puzzles/Temp/bin/Debug/Unity.UNetWeaver.dll.mdb
+/Users/ian/Documents/Unity Projects/GUI-Puzzles/Temp/bin/Debug/Unity.CecilTools.dll
+/Users/ian/Documents/Unity Projects/GUI-Puzzles/Temp/bin/Debug/Mono.Cecil.Pdb.dll
+/Users/ian/Documents/Unity Projects/GUI-Puzzles/Temp/bin/Debug/Mono.Cecil.Mdb.dll
